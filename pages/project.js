@@ -7,7 +7,7 @@ const Project = () => {
     const router = useRouter();
     
     const currentProject = projects.filter((project) => {
-        return project.name.replaceAll(' ', '_') === router.query.title.replaceAll(' ', '_')
+        return project.name.replaceAll(' ', '_') === router?.query?.title?.replaceAll(' ', '_')
     })[0]
 
     return (

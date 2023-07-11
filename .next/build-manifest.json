@@ -31,16 +31,6 @@
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/github.js"
-    ],
-    "/project": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/project.js"
-    ],
-    "/resume": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/resume.js"
     ]
   },
   "ampFirstPages": []
