@@ -23,7 +23,7 @@ const Github = ({user, statusCode}) => {
     )
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps () {
 
     const res = await fetch('https://api.github.com/users/KevinYaguar');
     const data = await res.json();
