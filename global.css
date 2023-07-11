@@ -1,0 +1,43 @@
+body,
+html, body > div:first-child,
+div#__next,
+div#__next > div 
+{
+     height: 100%;
+}
+
+.overflow {
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    align-items: center;
+}
+
+.overflow .card-img-top {
+    transform: scale(1);
+    transition: all 0.2s ease-in-out;
+}
+
+.overflow .card-img-top:hover {
+    transform: scale(1.8);
+}
+
+#nprogress .bar {
+    background: #25a4a2 !important;
+}
+
+#nprogress .spinner-icon {
+    border-top-color: #6f00ff;
+    border-left-color: #008cff;
+}
+
+.blog {   
+    height: 150px;
+    overflow: hidden;
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    align-items: center;
+}
