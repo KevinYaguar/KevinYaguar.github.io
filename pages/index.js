@@ -18,7 +18,7 @@ const Index = () => (
                             <p>I'm +2 year experienced developer, with strong skills for communication and problem-solver. I'm
                                 really commited to the proyects I assume. I like teamwork using agile methologies. I enjoy facing new
                                 challenges, taking responsabilities and training myself continually to keep me updated.</p>
-                            <a href="/hireme">Hire Me</a>
+                            <p>Contact me: 1154682556 - kevin.yaguar@gmail.com</p>
                         </div>
                     </div>
                 </div>
@@ -73,29 +73,33 @@ const Index = () => (
                             <h1 className="text-center text-light">Portfolio</h1>
                         </div>
                         {
-                            projects.map(({ name, description, image }, i) => (
-                                <div className="col-md-4 p-2" key={i}>
-                                    <div className="card h-100 rounded">
-                                        <div className="overflow">
-                                            <img src={`/${image}`} alt="photo" className="card-img-top" />
-                                        </div>
-                                        <div className="card-body">
-                                            <h3>{name}</h3>
-                                            <p>{description}</p>
-                                            <a href="#">See More</a>
+                            projects.map(({ name, description, image }, i) => {
+                                const nextUrl = `/project?title=${name?.replaceAll(' ', '_')}`
+                                
+                                return (
+                                    <div className="col-md-4 p-2" key={i}>
+                                        <div className="card h-100 rounded">
+                                            <div className="overflow">
+                                                <img src={`/${image}`} alt="photo" className="card-img-top" />
+                                            </div>
+                                            <div className="card-body">
+                                                <h3>{name}</h3>
+                                                <p>{description}</p>
+                                                <a href={nextUrl}>See More</a>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            ))
+                                )
+                            })
                         }
                     </div>
-                    <div className="text-center mt-4">
+                    {/* <div className="text-center mt-4">
                         <Link href={'/porfolio'} legacyBehavior>
                             <a className="btn btn-outline-light">
                                 More Projects
                             </a>
                         </Link>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
