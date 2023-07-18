@@ -1,12 +1,12 @@
-import Layout from "./components/Layout";
+import Layout from "../components/Layout";
 import { skills, experiencies, projects } from '../profile';
-import dynamic from 'next/dynamic'
-import { Skills } from "./components/Skills";
-import { Experiences } from "./components/Experiencies";
-import { Projects } from "./components/Projects";
+import dynamic from 'next/dynamic';
+import Projects from "../components/Projects";
+import Experiences from "../components/Experiencies";
+import Skills from "../components/Skills";
 
 const Header = dynamic(
-    () => import('./components/Header'),
+    () => import('../components/Header'),
     { ssr: false }
 )
 

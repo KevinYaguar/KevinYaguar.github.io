@@ -1,6 +1,6 @@
 import 'bootswatch/dist/cosmo/bootstrap.min.css'
 import '../global.css'
-import './i18n/i18n'
+import '../i18n/i18n'
 
 export default function MyApp({ Component, pageProps }) {
     return <Component {...pageProps} />

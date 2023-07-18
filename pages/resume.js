@@ -1,4 +1,4 @@
-import Layout from "./components/Layout";
+import Layout from "../components/Layout";
 import { projects } from "../profile";
 import Link from 'next/link'
 import { useTranslation } from "react-i18next";

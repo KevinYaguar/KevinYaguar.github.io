@@ -1,14 +1,14 @@
 {
-  "components\\Layout.js -> ../components/NavBar": {
-    "id": "components\\Layout.js -> ../components/NavBar",
+  "..\\components\\Layout.js -> ./NavBar": {
+    "id": "..\\components\\Layout.js -> ./NavBar",
     "files": [
-      "static/chunks/pages_components_NavBar_js.js"
+      "static/chunks/components_NavBar_js.js"
     ]
   },
-  "index.js -> ./components/Header": {
-    "id": "index.js -> ./components/Header",
+  "index.js -> ../components/Header": {
+    "id": "index.js -> ../components/Header",
     "files": [
-      "static/chunks/pages_components_Header_js.js"
+      "static/chunks/components_Header_js.js"
     ]
   }
 }
