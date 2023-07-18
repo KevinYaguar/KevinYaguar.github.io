@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { LANGUAGES } from '../constants';
+import { LANGUAGES } from '../i18n/constants';
 import { useTranslation } from 'react-i18next';
 
 const Navbar = () => {
