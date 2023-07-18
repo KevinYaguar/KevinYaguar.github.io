@@ -1,8 +1,13 @@
-import Navbar from './NavBar';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import NProgress from 'nprogress';
 import classNames from 'classnames';
+import dynamic from 'next/dynamic'
+
+const Navbar = dynamic(
+    () => import('../components/NavBar'),
+    { ssr: false }
+)
 
 const Layout = ({ children, footer = true, dark = false, title }) => {
 
@@ -11,7 +16,6 @@ const Layout = ({ children, footer = true, dark = false, title }) => {
     useEffect(() => {
 
         const handleRouteChange = url => { 
-            console.log(url)
             NProgress.start();
         }
         router.events.on('routeChangeStart', handleRouteChange)
