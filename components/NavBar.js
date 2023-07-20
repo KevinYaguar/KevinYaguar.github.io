@@ -40,8 +40,7 @@ const Navbar = () => {
                         </ul>
                     </div>
                     <div className='rounded-4'>
-                        <select defaultValue={'es'} onChange={onChangeLang} className="form-select rounded-4" aria-label="Default select example">
-                            <option selected>Lang</option>
+                        <select defaultValue={'es'} onChange={onChangeLang} className="form-select rounded-4">
                             {
                                 LANGUAGES.map(({ code, label }) => (
                                     <option
