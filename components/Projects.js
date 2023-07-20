@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next"
 import { projects } from "../profile"
+import Link from "next/link"
 
 
 const Projects = () => {
@@ -21,13 +22,15 @@ const Projects = () => {
                                 return (
                                     <div className="col-md-4 p-2" key={i}>
                                         <div className="card h-100 rounded">
-                                            <div className="overflow">
+                                            <div className="overflow rounded">
                                                 <img src={`/${image}`} alt="photo" className="card-img-top" />
                                             </div>
                                             <div className="card-body">
                                                 <h3>{t(`${name}`)}</h3>
                                                 <p>{t(`${description}`)}</p>
-                                                <a href={nextUrl}>{t('seeMore')}</a>
+                                                <Link href={nextUrl} legacyBehavior>
+                                                    <a >{t('seeMore')}</a>
+                                                </Link>
                                             </div>
                                         </div>
                                     </div>
@@ -35,6 +38,7 @@ const Projects = () => {
                             })
                         }
                     </div>
+                    {/*More Projects button */}
                     {/* <div className="text-center mt-4">
                         <Link href={'/porfolio'} legacyBehavior>
                             <a className="btn btn-outline-light">
